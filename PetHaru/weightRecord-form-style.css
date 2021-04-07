@@ -8,7 +8,7 @@ body{
     background-image: url(../Petimages/body-background.png);
     background-repeat: no-repeat;
     background-size: 350px;
-    background-position-x: 160vh;
+    background-position-x: 155vh;
     background-position-y: 55vh;
 }
 
@@ -100,8 +100,8 @@ a{
     display: grid;
     grid-area: body;
     grid-template-areas:
-    "aside main";
-    grid-template-columns: 200px 1fr;   
+    "aside main .";
+    grid-template-columns: 200px 6fr 1fr;   
 }
 
 #aside{
@@ -158,6 +158,8 @@ a{
     /* -------------------------------- */
 #main{
     grid-area: main;
+    display: flex;
+    align-items: center;
 }
 
     .petphoto{
@@ -223,7 +225,7 @@ a{
     .form{
         border: none;
         padding: 0;
-        margin-top: 30px;
+        /* margin-top: 30px; */
         height: 60vh;
         width: 100%;
         
@@ -332,6 +334,7 @@ a{
                     background-color: rgb(255, 209, 124);
                     font-family: sans-serif;
                     font-weight: bold;
+                    font-size: 15px;
 
                     position: absolute;
                     left: 45vh;
