@@ -7,7 +7,9 @@ body{
     background-color: rgb(255, 253, 246);
     background-image: url(../Petimages/body-background.png);
     background-repeat: no-repeat;
-
+    background-size: 350px;
+    background-position-x: 160vh;
+    background-position-y: 55vh;
 }
 
 #root{
