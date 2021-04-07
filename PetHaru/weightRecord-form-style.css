@@ -1,0 +1,366 @@
+html{
+    height: 100%;
+    margin: 10px;
+}
+body{
+    height: 100%;
+    background-color: rgb(255, 253, 246);
+
+}
+
+#root{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 80px 70px 1fr 70px;
+    grid-template-columns: 200px 1fr;  
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "body body"
+    "footer footer";
+}
+
+/* #body{
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol{
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+a{
+    color: initial;
+    text-decoration: initial;
+}
+
+.img{
+    display: inline-block;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.d-none{
+    display: none !important;
+}
+/* ---------------------header--------------------- */
+#root>#header{
+    /* background-color: antiquewhite; */
+    grid-area: header;
+}
+    .float-content{
+        position: relative;
+    }
+
+        .logo{
+            margin: 0;
+            display: inline-block;
+            position:absolute;
+
+            width: 150px;
+            height: 100%;
+
+        }
+
+            img{
+                width: 150px;
+                height: auto;
+            }
+
+
+/* ---------------------nav--------------------- */            
+#nav{
+    background-color: antiquewhite;
+    grid-area: nav;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+    #nav ul{
+        display: flex;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+/* ---------------------body--------------------- */  
+#body{
+    display: grid;
+    grid-area: body;
+    grid-template-areas:
+    "aside main";
+    grid-template-columns: 200px 1fr;   
+}
+
+#aside{
+    background-color: antiquewhite;
+    grid-area: aside;
+    /* position: fixed; */
+    width: 200px;
+    height: 71vh;
+}
+
+
+    .aside-menu > h1{
+        color:#5c5c5c;
+        font-size:17px;
+        font-weight: bold;
+        margin: 0;
+        height: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .aside-menu ul{
+        width: 100%;
+        background-color: rgb(250,235,215);
+
+        
+      }
+      
+        .aside-menu li a {
+            width: 100%;
+            padding: 13px 0px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            }
+            
+        .aside-menu .active {
+            background-color: rgb(255, 209, 124);
+            color: rgb(141, 135, 135);
+            padding: 8px 16px;
+            }
+            
+        .aside-menu li a:hover:not(.active) {
+            background-color: rgb(255, 209, 124);
+            color: rgb(141, 135, 135);
+            
+            }
+
+    /* -------------------------------- */
+#main{
+    grid-area: main;
+}
+
+    .petphoto{
+        display: flex;
+        position: relative;
+    }
+
+    .petphoto ol{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin: 0;
+
+        top: -5vh;
+        left: -43vh;
+
+    }
+
+    .petphoto li{
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .petphoto li,
+    .petphoto a{
+        height: 80px;
+        width: 80px;
+        border-radius: 7px;
+    }
+
+    .petphoto a:hover,
+    .petphoto a.current{
+        opacity: 50%;
+    }
+
+
+    .pet1{
+        background-image: url("../Petimages/pet1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .pet2{
+        background-image: url("../Petimages/pet2.png");
+        background-size: cover;
+    }
+
+    .pet3{
+        background-image: url("../Petimages/pet3.png");
+        background-size: cover;
+    }
+
+    .pet4{
+        background-image: url("../Petimages/pet4.jpg");
+        background-size: cover;
+    }
+
+
+
+    /* -------------------------------- */
+
+    .form{
+        border: none;
+        padding: 0;
+        margin-top: 30px;
+        height: 60vh;
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+    }
+
+        .weight-input{
+            background-color: antiquewhite;
+            height: 100%;
+            width: 100vh;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 10px;
+            
+
+            display: flex;
+            position: relative;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+                .record{
+                    padding: 7px 7px 7px 7px;
+                    font-size: 20px;
+                    color: rgb(82, 82, 82);
+                    background-color: rgb(255, 226, 188);
+                    background-size: 5vh;
+                    border-radius: 10px;
+
+                    position: absolute;
+                    top: 4vh;
+                    left: 49vh;
+                }
+
+
+                .weight-input-container input{
+                    position: absolute;
+                    right: 17vh;
+                }
+
+                    .input-date{
+                        top:13.3vh;
+                    }
+
+                    .input-time{
+                        top:25vh;
+                    }
+
+                    .input-weight{
+                        top:37vh
+                    }
+
+
+                .weight-input label{
+                    position: absolute;
+                    left: 26vh;
+                }
+
+                    .weight-input .date{
+                        height: 35px;
+                        width: 35px;
+                        background-image: url("../Petimages/icon-calendar.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+
+                        top: 14.5vh;
+                    }
+
+                    .weight-input .time{
+                        height: 35px;
+                        width: 35px;
+                        background-image: url("../Petimages/icon-time.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+
+                        top: 26vh;
+                    }
+                    .weight-input .weight{
+                        height: 35px;
+                        width: 35px;
+                        background-image: url("../Petimages/icon-weight.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+
+                        top: 38vh;
+                    }
+
+                .weight-input input{
+                    height: 7vh;
+                    width: 50vh;
+                    border: 0;
+                    border-radius: 7px;
+                }
+
+
+                .weight-input .submit{
+                    width: 20vh;
+                    margin: 0;
+                    border: 0;
+                    background-color: rgb(255, 209, 124);
+                    font-family: sans-serif;
+                    font-weight: bold;
+
+                    position: absolute;
+                    left: 45vh;
+                }
+
+                .weight-input .submit:hover{
+                    opacity: 50%;
+                }
+
+/* ---------------------footer--------------------- */
+#root>#footer{
+    /* background-color: antiquewhite; */
+    grid-area: footer;
+}
+
+
+@media screen and (max-width:500px){
+    #root{
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 50px 1fr 70px;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "body"
+        "footer";
+    }
+    #body{
+        display: grid;
+        grid-template-rows: 50px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "aside"
+        "main";
+    }
+
+} 
