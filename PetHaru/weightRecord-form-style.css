@@ -5,6 +5,8 @@ html{
 body{
     height: 100%;
     background-color: rgb(255, 253, 246);
+    background-image: url(../Petimages/body-background.png);
+    background-repeat: no-repeat;
 
 }
 
