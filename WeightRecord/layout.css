@@ -1,11 +1,9 @@
 html{
-    
     height: 100%;
     margin: 10px;
 }
 body{
     height: 100%;
-    
 }
 
 #root{
@@ -39,7 +37,6 @@ body{
     grid-template-areas:
     "aside main";
     grid-template-columns: 150px 1fr;
-    
 }
 
 #aside{
