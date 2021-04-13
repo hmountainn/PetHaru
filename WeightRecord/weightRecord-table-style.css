@@ -185,6 +185,7 @@ a{
             align-items: center;
             justify-content: space-evenly;
         }
+
             .total-record{
                 padding: 7px 7px 7px 7px;
                 font-size: 20px;
@@ -194,7 +195,15 @@ a{
                 border-radius: 10px;
 
                 position: absolute;
-                top: 30vh;
+                top: 29vh;
+            }
+
+            tbody{
+                position: absolute;
+                top: 38vh;
+                height: 312px;
+                overflow-x: hidden;
+                overflow-y: scroll;
             }
             
             .record-table td{
