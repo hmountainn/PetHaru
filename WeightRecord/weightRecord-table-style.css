@@ -206,13 +206,11 @@ a{
                 overflow-y: scroll;
             }
             
-            .record-table td{
-                /* border: solid 1px black; */
-                width: 200px;
-                height: 30px;
-
-
-            }
+                .record-table td{
+                    /* border: solid 1px black; */
+                    width: 200px;
+                    height: 30px;
+                }
             
             .am{
                 color: rgb(126, 126, 255);
