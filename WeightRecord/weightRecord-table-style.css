@@ -104,7 +104,6 @@ a{
 #aside{
     background-color: antiquewhite;
     grid-area: aside;
-    /* position: fixed; */
     width: 200px;
     height: 71vh;
 }
@@ -165,7 +164,6 @@ a{
         width: 100%;
         
         display: flex;
-        position: relative;
         justify-content: center;
         
     }
@@ -180,7 +178,6 @@ a{
             
 
             display: flex;
-            position: relative;
             flex-direction: column;
 
             align-items: center;
@@ -195,8 +192,9 @@ a{
                 border-radius: 10px;
 
                 position: absolute;
-                top: 6vh;
-                left: 49vh;
+                top: 30vh;
+
+
             }
 
 
