@@ -228,9 +228,11 @@ a{
                 overflow-x: hidden;
                 overflow-y: scroll;
             }
+                tbody a:hover{
+                    color: rgb(177, 177, 177);
+                }
             
                 .record-table td{
-                    /* border: solid 1px black; */
                     width: 200px;
                     height: 30px;
                 }
