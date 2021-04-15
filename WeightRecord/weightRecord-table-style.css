@@ -194,7 +194,7 @@ a{
             border-radius: 10px;
 
             position: absolute;
-            bottom: 5vh;
+            bottom: 3vh;
             left: 40.5vh;
         }
 
@@ -226,7 +226,8 @@ a{
             }
             tbody{
                 position: absolute;
-                height: 250px;
+                top: 13vh;
+                height: 273px;
                 overflow-x: hidden;
                 overflow-y: scroll;
             }
