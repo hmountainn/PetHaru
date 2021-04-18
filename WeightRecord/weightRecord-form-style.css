@@ -324,7 +324,11 @@ a{
 
 
                 .weight-input .submit{
+                    height: 7vh;
                     width: 20vh;
+                    border: 0;
+                    border-radius: 7px;
+
                     margin: 0;
                     border: 0;
                     background-color: rgb(255, 209, 124);
