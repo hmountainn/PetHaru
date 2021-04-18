@@ -223,10 +223,32 @@ a{
                 position: absolute;
                 top: 8.5vh;
                 left: 8.5vh;
-            }
+            }  
+                thead .date{
+                    background-image: url("../Petimages/icon-calendar.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                thead .time{
+                    background-image: url("../Petimages/icon-time.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                thead .weight{
+                    background-image: url("../Petimages/icon-weight.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+
             tbody{
                 position: absolute;
-                top: 13vh;
+                top: 13.5vh;
                 height: 273px;
                 overflow-x: hidden;
                 overflow-y: scroll;
