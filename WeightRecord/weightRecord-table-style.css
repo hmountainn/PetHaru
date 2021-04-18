@@ -158,17 +158,72 @@ a{
     align-items: center;
     justify-content: center;
 }
+
     .record{
         border: none;
         padding: 0;
         height: 60vh;
-        width: 754.4px;
+        width: 110vh;
         
         display: flex;
         position: relative;
-        justify-content: center;
-        
     }
+
+        .petphoto{
+            display: flex;
+            position: absolute;
+        }
+
+        .petphoto ol{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            margin: 0;
+
+            top: 3vh;
+            left: 7vh;
+
+        }
+
+        .petphoto li{
+            margin-top: 10px;
+            margin-bottom: 13px;
+        }
+
+        .petphoto li,
+        .petphoto a{
+            height: 80px;
+            width: 80px;
+            border-radius: 7px;
+        }
+
+        .petphoto a:hover,
+        .petphoto a.current{
+            opacity: 50%;
+        }
+
+
+        .pet1{
+            background-image: url("../Petimages/pet1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .pet2{
+            background-image: url("../Petimages/pet2.png");
+            background-size: cover;
+        }
+
+        .pet3{
+            background-image: url("../Petimages/pet3.png");
+            background-size: cover;
+        }
+
+        .pet4{
+            background-image: url("../Petimages/pet4.jpg");
+            background-size: cover;
+        }
 
         .record-title{
             padding: 7px 7px 7px 7px;
@@ -181,7 +236,7 @@ a{
 
             position: absolute;
             top: 2vh;
-            left: 39.5vh;
+            right: 41.5vh;
         }
 
         .button{
@@ -195,7 +250,7 @@ a{
 
             position: absolute;
             bottom: 3vh;
-            left: 40.5vh;
+            right: 43vh;
         }
 
         .button:hover{
@@ -205,7 +260,7 @@ a{
         .record-table{
             background-color: antiquewhite;
             height: 452.64px;
-            width: 754.4px;
+            width: 100%;
             font-family: sans-serif;
             font-weight: bold;
             border-radius: 10px;
@@ -216,13 +271,13 @@ a{
             display: flex;
 
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-around;
         }
 
             thead{
                 position: absolute;
                 top: 8.5vh;
-                left: 8.5vh;
+                right: 10.5vh;
             }  
                 thead .date{
                     background-image: url("../Petimages/icon-calendar.png");
@@ -249,6 +304,7 @@ a{
             tbody{
                 position: absolute;
                 top: 13.5vh;
+                right: 8vh;
                 height: 273px;
                 overflow-x: hidden;
                 overflow-y: scroll;
