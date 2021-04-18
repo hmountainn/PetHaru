@@ -156,14 +156,16 @@ a{
     grid-area: main;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
     .record{
         border: none;
         padding: 0;
         height: 60vh;
-        width: 100%;
+        width: 754.4px;
         
         display: flex;
+        position: relative;
         justify-content: center;
         
     }
@@ -180,7 +182,6 @@ a{
             text-align: center;
 
             display: flex;
-            flex-direction: column;
 
             align-items: center;
             justify-content: space-evenly;
@@ -195,20 +196,20 @@ a{
                 border-radius: 10px;
 
                 position: absolute;
-                top: 29vh;
-                left: 46.5%;
+                top: 2vh;
+                left: 42vh;
             }
 
             thead{
-                position: relative;
-                top: -17vh;
-                left: -1.2vh;
+                position: absolute;
+                top: 10vh;
+                left: 8.5vh;
             }
             tbody{
                 font-size: 17px;
 
                 position: absolute;
-                top: 43vh;
+                top: 15vh;
                 height: 280px;
                 overflow-x: hidden;
                 overflow-y: scroll;
