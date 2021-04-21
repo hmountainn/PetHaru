@@ -64,7 +64,5 @@ window.addEventListener("load",function(){
         }
         
     }
-    if(selceted != null)
-        console.log(selceted);
     
 });
