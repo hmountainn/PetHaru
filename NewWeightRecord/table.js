@@ -22,7 +22,7 @@ window.addEventListener("load",function(){
         tdTime.className = "pm";
     }
     else{
-        tdTime.append(time+"AM")
+        tdTime.append(time+" AM")
         tdTime.className = "am";
     }
 
@@ -55,9 +55,9 @@ window.addEventListener("load",function(){
             console.log(weight);
 
             //localStorage에 저장
-            localStorage.setItem("date",date);
-            localStorage.setItem("time",time);
-            localStorage.setItem("weight",weight);
+            localStorage.setItem("reDate",date);
+            localStorage.setItem("reTime",time);
+            localStorage.setItem("reWeight",weight);
         }
         
     }
