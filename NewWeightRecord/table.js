@@ -2,7 +2,7 @@ window.addEventListener("load",function(){
 
     tbody = document.querySelector(".tbody");
 
-    //데이터 받아오기
+    //입력데이터 받아오기
     var date = localStorage.getItem("date");
     var time = localStorage.getItem("time");
     var weight = localStorage.getItem("weight");
@@ -45,11 +45,12 @@ window.addEventListener("load",function(){
             selDate = tr[i].querySelector("td");
             selTime = tr[i].querySelector("td:nth-child(2)");
             selWeight = tr[i].querySelector("td:nth-child(3)");
-            
+
             date = selDate.innerText;
             time = selTime.innerText;
             weight = selWeight.innerText;
             
+            console.log(tr[i]);
             console.log(date);
             console.log(time);
             console.log(weight);
@@ -61,7 +62,7 @@ window.addEventListener("load",function(){
         }
         
     }
+    if(selceted != null)
+        console.log(selceted);
     
-    
-
 });

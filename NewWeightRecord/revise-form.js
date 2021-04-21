@@ -49,6 +49,26 @@ window.addEventListener("load",function(){
 });
 
 window.addEventListener("load",function(){
-    
+    var revise = document.querySelector(".re");
+
+    InputDate = document.querySelector(".input-date");
+    InputTime = document.querySelector(".input-time");
+    InputWeight = document.querySelector(".input-weight");
+
+    revise.onclick = function(){
+        var date = InputDate.value;
+        var time = InputTime.value;
+        var weight = InputWeight.value;
+
+        console.log(date);
+        console.log(time);
+        console.log(weight);
+
+        alert("정말 수정하시겠습니까?");
+        //localStorage에 저장
+        localStorage.setItem("reDate",date);
+        localStorage.setItem("reTime",time);
+        localStorage.setItem("reWeight",weight);
+    }
 
 });
