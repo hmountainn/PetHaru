@@ -64,11 +64,13 @@ window.addEventListener("load",function(){
         console.log(time);
         console.log(weight);
 
-        alert("정말 수정하시겠습니까?");
-        //localStorage에 저장
-        localStorage.setItem("reDate",date);
-        localStorage.setItem("reTime",time);
-        localStorage.setItem("reWeight",weight);
+        var con =confirm("정말 수정하시겠습니까?");
+        if(con == true){//localStorage에 저장
+            localStorage.setItem("reDate",date);
+            localStorage.setItem("reTime",time);
+            localStorage.setItem("reWeight",weight);
+            location.href = "table.html";
+        }
     }
 
 });
