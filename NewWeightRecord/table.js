@@ -22,7 +22,9 @@ window.addEventListener("load",function(){
         tdTime.className = "pm";
     }
     else{
-        tdTime.append(time+" AM")
+        hour = time.substring(1,2)
+        minute = time.substring(3,5); 
+        tdTime.append(hour+":"+minute+" AM")
         tdTime.className = "am";
     }
 
