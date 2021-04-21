@@ -1,6 +1,6 @@
 window.addEventListener("load",function(){
 
-    var tbody = document.querySelector(".tbody");
+    tbody = document.querySelector(".tbody");
 
     //데이터 받아오기
     var date = localStorage.getItem("date");
@@ -33,6 +33,35 @@ window.addEventListener("load",function(){
     tr.append(tdWeight);
     //표에 추가
     tbody.append(tr);
+});
 
+
+window.addEventListener("load",function(){
+
+    var tr = tbody.querySelectorAll("tr");
+    for(let i=0; i<tr.length; i++){
+        var td = tr[i].querySelectorAll("td");
+        td[0].onclick = function(){
+            selDate = tr[i].querySelector("td");
+            selTime = tr[i].querySelector("td:nth-child(2)");
+            selWeight = tr[i].querySelector("td:nth-child(3)");
+            
+            date = selDate.innerText;
+            time = selTime.innerText;
+            weight = selWeight.innerText;
+            
+            console.log(date);
+            console.log(time);
+            console.log(weight);
+
+            //localStorage에 저장
+            localStorage.setItem("date",date);
+            localStorage.setItem("time",time);
+            localStorage.setItem("weight",weight);
+        }
+        
+    }
+    
+    
 
 });

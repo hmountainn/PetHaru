@@ -20,7 +20,4 @@ window.addEventListener("load",function(){
         localStorage.setItem("time",time);
         localStorage.setItem("weight",weight);
     }
-
-
-
 });
