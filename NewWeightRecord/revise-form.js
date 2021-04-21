@@ -1,6 +1,5 @@
 window.addEventListener("load",function(){
     
-    // div = document.querySelectorAll(".weight-input-container");
     inputDate = document.querySelector(".input-date");
     inputTime = document.querySelector(".input-Time");
     inputWeight = document.querySelector(".input-weight");
@@ -47,7 +46,9 @@ window.addEventListener("load",function(){
         console.log(hour+":"+minute)
     }
     
+});
 
-
+window.addEventListener("load",function(){
+    
 
 });
