@@ -261,24 +261,24 @@ ul,ol{
 
 
         .pet1{
-            background-image: url("../Petimages/pet1.png");
+            background-image: url("../../images/pet1.png");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
         }
 
         .pet2{
-            background-image: url("../Petimages/pet2.png");
+            background-image: url("../../images/pet2.png");
             background-size: cover;
         }
 
         .pet3{
-            background-image: url("../Petimages/pet3.png");
+            background-image: url("../../images/pet3.png");
             background-size: cover;
         }
 
         .pet4{
-            background-image: url("../Petimages/pet4.jpg");
+            background-image: url("../../images/pet4.jpg");
             background-size: cover;
         }
 
@@ -337,21 +337,21 @@ ul,ol{
                 right: 10.5vh;
             }  
                 thead .date{
-                    background-image: url("../Petimages/icon-calendar.png");
+                    background-image: url("../../images/icon-calendar.png");
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
                 }
 
                 thead .time{
-                    background-image: url("../Petimages/icon-time.png");
+                    background-image: url("../../images/icon-time.png");
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
                 }
 
                 thead .weight{
-                    background-image: url("../Petimages/icon-weight.png");
+                    background-image: url("../../images/icon-weight.png");
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
