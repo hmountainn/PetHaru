@@ -1,4 +1,4 @@
-tml{
+html{
     height: 100%;
     margin: 0px;
 }
@@ -90,6 +90,37 @@ ul,ol{
     margin: 5px;
     
 }
+
+    .big-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mini-box{
+        width: 250px;
+        margin: 16px;
+    }
+
+        .mini-box .box-title{
+            width: 100%;
+            height: 120px;
+        }
+
+            .box-title img{
+                width: 100%;
+                height: 100%;
+            }
+
+        .mini-box .box-main{
+            
+        }
+
+
+            .mini-box .content-main{
+                height: 68px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
 
 
 /*--------header-design----------*/
