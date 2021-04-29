@@ -89,7 +89,14 @@ ul,ol{
     padding: 20PX;
     margin: 5px;
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+    .search-form{
+        display: inline-block;
+    }
 
     .big-box{
         display: flex;
@@ -99,29 +106,41 @@ ul,ol{
     .mini-box{
         width: 250px;
         margin: 16px;
+        position: relative;
     }
 
-        .mini-box .box-title{
+        .mini-box .box-img{
             width: 100%;
-            height: 120px;
+            height: 250px;
         }
 
-            .box-title img{
+            .box-img img{
                 width: 100%;
                 height: 100%;
+                
             }
 
-        .mini-box .box-main{
-            
-        }
+            .hide-box{
+                height: 250px;
+                width: 250px;
+                position: absolute;
+                top: 0;
 
+                display: flex;
+                justify-content: center;
 
-            .mini-box .content-main{
-                height: 68px;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                background-color: rgba(0,0,0,0.6)
             }
 
+                .hide-info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 70px;
+                    margin-bottom: auto;
+
+                    color: white
+                }
 
 /*--------header-design----------*/
 
