@@ -275,6 +275,12 @@ ul,ol{
                 background-color: rgba(0,0,0,0.6)
             }
 
+            .hide-box:hover{
+                text-decoration: underline;
+                color: white;
+                cursor: pointer;
+            }
+
                 .hide-info{
                     display: flex;
                     flex-direction: column;
