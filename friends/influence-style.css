@@ -178,25 +178,61 @@ ul,ol{
         
         
         .comment-box{
-            height: 420px;
+            height: 365px;
             overflow: scroll;
+
+            border-bottom: rgb(216, 216, 216) solid 1px;
         }
 
         .comment-box::-webkit-scrollbar{
             display: none;
         }
 
-        .main-box-comment{
-            width: 289px;
-            height: 60px;
-            padding: 10px 16px;
+            .main-box-comment{
+                width: 289px;
+                height: 60px;
+                padding: 10px 16px;
 
-            text-align: left;
-            
+                text-align: left;
+                
+                display: flex;
+            }
+
+        .comment-record{
+            height: 55px;
+            width: 302px;
+            margin-left: auto;
+            margin-right: auto;
+
             display: flex;
-            
+            align-content: center;
         }
 
+            .comment-form{
+                height: 40px;
+                width: 302px;
+                margin-top: auto;
+                margin-bottom: auto;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .input-comment{
+                    width:250px;
+                    height: 80%;
+
+                    border: none;
+                }
+
+                .submit-comment{
+                    height: 80%;
+                    font-size: 15px;
+                    font-weight: bold;
+                    background-color: transparent;
+                    border: transparent 0px solid;
+                }
     
 
     .popup .close-btn {
