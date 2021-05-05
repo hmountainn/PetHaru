@@ -20,13 +20,31 @@ window.addEventListener("load",function(){
     }
 
     bigbox.onclick = function(e){
-        if(e.target.classList.contains("hide-box")){
+        console.log(e.target);
+
+        if(e.target.classList.contains("hide-box")){    
             var minipopup = e.target.parentElement.querySelector(".popup")
             minipopup.classList.toggle("active");
         }
+
+        if(e.target.classList.contains("box-title")){
+            var minipopup = e.target.parentElement.parentElement.parentElement.querySelector(".popup")
+            minipopup.classList.toggle("active");
+        }
+
+        if(e.target.parentElement.classList.contains("box-title")){
+            var minipopup = e.target.parentElement.parentElement.parentElement.parentElement.querySelector(".popup")
+            minipopup.classList.toggle("active");            
+        }
+
+        if(e.target.parentElement.classList.contains("sub-info")){
+            var minipopup = e.target.parentElement.parentElement.parentElement.parentElement.querySelector(".popup")
+            minipopup.classList.toggle("active");            
+        }
+
+
         if(e.target.classList.contains("close-btn")){
             var minipopup = e.target.parentElement.parentElement
-            console.log(minipopup);
             minipopup.classList.remove("active");
         }
         
