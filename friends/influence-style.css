@@ -95,6 +95,13 @@ ul,ol{
     align-items: center;
 }
 
+    .main-title{
+        font-size: 25px;
+        font-weight: bold;
+        color: coral;
+        margin-bottom: 10px;
+    }
+
     .search-form{
         display: inline-block;
     }
