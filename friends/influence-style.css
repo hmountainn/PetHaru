@@ -95,16 +95,69 @@ ul,ol{
     align-items: center;
 }
 
-    .main-title{
-        font-size: 25px;
-        font-weight: bold;
-        color: coral;
-        margin-bottom: 10px;
+    .subject{
+        height: 50px;
+        text-align: center;
+        width: 100%;
     }
-
-    .search-form{
+    .subject h1{
+        color: #9e9e9e;
+        font-size: 20px;
         display: inline-block;
+        border-bottom: 4px solid;
+        padding-bottom: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        
     }
+    .recommend a{
+        color: orange;
+        font-size: 22px;
+        font-weight: bold;
+        display: inline-block;
+        border-bottom: 4px solid;
+        padding-bottom: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    } 
+
+    .search-form-outline{
+        margin:20px 30px 0 0;
+        
+        }
+        .search-form {
+            display: inline-block;
+            width: 245px;
+            height: 34px;
+            border: 3px solid white;
+            background: white;
+            border-radius: 15px;
+            box-shadow: #dadada 0px 3px 3px 0px;
+            }
+        
+            .input_search {
+            width: 210px;
+            height: 22px;
+            margin: 6px 0 0 28px;
+            border: 0;
+            line-height: 21px;
+            font-size: 16px;
+            color: gray;
+            outline: none;
+            background: white;
+            }
+            .sch_smit {
+            position: relative;
+            top: -11px;
+            left: 15px;
+            height: 40px;
+            padding: 0;
+            border: 0;
+            background: white;
+            color: #eeeeee;
+            font-weight: bold;
+            border-radius: 15px;
+            }
 
     .popup .overlay {
         position:fixed;
