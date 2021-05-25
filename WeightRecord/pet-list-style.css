@@ -231,6 +231,38 @@ ul,ol{
         margin-bottom: 10px;
         
     }
+.pet-list-box{
+    height: 100%;
+    width: 100%;
+}
+
+    .pet-list{
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+        .pet{
+            height: 250px;
+            width: 250px;
+        }
+
+        .pet:hover{
+            opacity: 70%;
+            box-shadow: 7px 7px #3b3b3b;
+        }
+
+            .pet .img{
+                height: 100%;
+                width: 100%;
+            }
+
 
 
 
